@@ -15,7 +15,7 @@ domain: fusionaccess.devcluster.openshift.com
 clusters:
   - name: eduffy-hcpdemo
     count: 1
-    region: us-west-1
+    region: us-east-2
     spread_across_availability_zones: false
     replicas: 1
     instance_type: m5.4xlarge
