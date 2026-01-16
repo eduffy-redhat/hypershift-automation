@@ -13,10 +13,17 @@ domain: fusionaccess.devcluster.openshift.com
 # Use 'count' to create multiple clusters of the same type with auto-incremented names
 # Note: domain is now defined at the top level and applies to all clusters
 clusters:
-  - name: eduffy-hcpdemo
+  - name: eduffy-hcp-trident-1
+    count: 1
+    region: us-east-1
+    spread_across_availability_zones: true
+    replicas: 3
+    instance_type: m5.4xlarge
+    image: default
+  - name: eduffy-hcp-trident-2
     count: 1
     region: us-east-2
-    spread_across_availability_zones: false
-    replicas: 1
+    spread_across_availability_zones: true
+    replicas: 3
     instance_type: m5.4xlarge
     image: default
