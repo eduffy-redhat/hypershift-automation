@@ -17,13 +17,13 @@ clusters:
     count: 1
     region: us-east-1
     spread_across_availability_zones: true
-    replicas: 3
+    replicas: 1
     instance_type: m5.4xlarge
     image: default
   - name: eduffy-hcp-trident2
     count: 1
     region: us-east-2
     spread_across_availability_zones: true
-    replicas: 3
+    replicas: 1
     instance_type: m5.4xlarge
     image: default
